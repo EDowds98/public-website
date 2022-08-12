@@ -1,12 +1,64 @@
 body {
-  background-color: #262626;
+  background-color: #e2e8ce;
 }
 
 .App {
+  display: grid;
+}
+
+.Header {
+  background-color: #262626;
+  display: grid;
   padding-left: 2%;
   font-family: 'Gentium Book Plus', serif;
-  font-size: 1.5rem /*38px*/;
+  font-size: 2rem;
   color: #e2e8ce;
+
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
  
 }
 
+.Main-content {
+  background-color: #e2e8ce;
+  color: #262626;
+}
+img {
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 5rem;
+  margin-top: 5%;
+}
+
+.Header h1 {
+  justify: center;
+  min-height: 50%;
+  padding-top: 8rem;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .Header {
+    display: grid;
+
+    justify-content: space-between;
+    grid-template-columns: auto;
+  }
+
+    img {
+      display: block;
+      width: 75%;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .Header h1 {
+    padding-top: 2rem;
+  }
+  
+}
